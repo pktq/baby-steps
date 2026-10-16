@@ -1,0 +1,10 @@
+{
+  "name": "baby-steps",
+  "version": "0.1.0",
+  "description": "Launch coach for devs stuck in 'one more feature' mode: a fear-first interview, a LAUNCH.md ladder of 5-minute steps, and one small nudge per feature while Claude builds.",
+  "author": { "name": "pktq", "url": "https://github.com/pktq" },
+  "homepage": "https://github.com/pktq/baby-steps",
+  "repository": "https://github.com/pktq/baby-steps",
+  "license": "MIT",
+  "keywords": ["launch", "deploy", "shipping", "indie-hacker", "productivity"]
+}

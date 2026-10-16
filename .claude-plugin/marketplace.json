@@ -1,0 +1,11 @@
+{
+  "name": "baby-steps",
+  "owner": { "name": "pktq" },
+  "plugins": [
+    {
+      "name": "baby-steps",
+      "source": "./",
+      "description": "Launch coach: fear-first interview, LAUNCH.md ladder, one small launch step per feature."
+    }
+  ]
+}
