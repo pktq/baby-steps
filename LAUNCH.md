@@ -30,7 +30,7 @@ Budget: $0 · Window: none · Started: 2026-10-16
 `[ ]` todo · `[x]` done · `[~]` snoozed. Tags: who does it, and what the agent prepares.
 
 - [x] 1. Build the skill: interview, LAUNCH.md, nudges, off switch, 9 stack ladders · agent
-- [ ] 2. Commit and publish the repo · 3m · you: the commands are in the launch kit
+- [x] 2. Commit and publish the repo · 3m · you: the commands are in the launch kit
 - [ ] 3. Test it for real: run `/im-scared` in another project, then ask for a feature in a **new** session and check the 🪜 line appears · 10m · you
 - [ ] 4. Record a 20-second demo GIF · 10m · you: the shot list is in the launch kit
 - [ ] 5. Make a social preview image (1280×640) and set it in repo Settings · 10m · both: the agent can generate one, you upload it
@@ -50,6 +50,7 @@ Budget: $0 · Window: none · Started: 2026-10-16
 
 - 2026-10-16 ladder created
 - 2026-10-16 #1 done
+- 2026-10-16 #2 done, repo public
 
 ---
 
