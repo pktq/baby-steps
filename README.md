@@ -116,7 +116,7 @@ Plugin skills are namespaced, so with this route the commands are `/baby-steps:i
 ## FAQ
 
 **How does it nudge me in later sessions?**
-Onboarding adds a 4-line block to your project's `CLAUDE.md` (or `AGENTS.md` for other agents) that points the agent at `LAUNCH.md`. The nudge rules live at the bottom of `LAUNCH.md`, so you can read and change them. `/im-a-big-dev-now` removes the block and turns the nudges off.
+Onboarding adds a 4-line block to your project's `CLAUDE.md` (or `AGENTS.md` for other agents) that points the agent at `LAUNCH.md`. The nudge rules live at the bottom of `LAUNCH.md`, so you can read and change them. Installed as a Claude Code plugin, a small hook also puts the next step in front of Claude on every prompt, so it doesn't have to remember to check. The hook only reads `LAUNCH.md`, runs nothing else, and stays silent without the block. `/im-a-big-dev-now` removes the block and turns the nudges off.
 
 **Will it nag me?**
 It's built not to: one line per feature, two per session at most, and snoozes are respected. If it still annoys you, edit "Rules for the agent" in `LAUNCH.md` and it follows your version.

@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Plugin hook: on every prompt, puts the next step from `LAUNCH.md` in front of Claude, so nudges no longer depend on it remembering to check
+- An offer with no answer by the next session is snoozed, so the ladder doesn't get stuck
+- The before-build line always offers your next step, even when the agent's step comes first; agent steps are offered at the end
+
 ## 0.1.0 · 2026-10-16
 
 First release.
