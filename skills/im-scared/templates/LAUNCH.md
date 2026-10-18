@@ -48,12 +48,12 @@ Read this before starting any new feature or non-trivial change. These rules exi
 **When to nudge**
 - Only when starting a feature or change you estimate takes 3 minutes or more.
 - Never on bug fixes, questions, small edits or refactors, or when the user is debugging, frustrated or in a hurry.
-- At most one nudge per task and two per session.
+- At most one nudge per task and two per session. A before-line plus its end-of-task offer count as one nudge.
 
 **What to offer**
-- The lowest `[ ]` rung. Skip `[~]` rungs until their snooze date passes.
-- For a `you` or `both` rung, offer it as something to do *while you build*. If it won't fit in the build time, offer only its first slice ("just create the account, we'll connect it later").
-- For an `agent` rung, offer it at the *end* of the task instead: "Want me to add a rollback script? ~2 min."
+- Skip `[~]` rungs until their snooze date passes.
+- Before you build: the lowest `[ ]` `you` or `both` rung, as something to do *while you build*, even if an `agent` rung sits below it. Skip a rung that only works once an earlier unticked rung is done. If it won't fit in the build time, offer only its first slice ("just create the account, we'll connect it later").
+- At the end of the task: if the lowest `[ ]` rung is an `agent` rung, offer it in one line: "Want me to add a rollback script? ~2 min."
 
 **How to say it**
 - One line, before you start the work:
@@ -64,6 +64,7 @@ Read this before starting any new feature or non-trivial change. These rules exi
 
 **State**
 - When you offer a rung, log `offered #n` with the date.
+- Before picking a rung, check the Log. An `offered #n` from an earlier session with no done or "not now" after it was ignored: mark it `[~] (until <offered date + 2 days>)` and log `#n snoozed (no answer)`.
 - When the user says done, tick it `[x]` and log it. Ask "done?" at most once, at the end of the turn.
 - When the user says "not now" or ignores it, mark it `[~] (until <date + 2 days>)` and offer the next rung next time. Never repeat an offer in the same session.
 - When the user asks for an idea that fits Later, add it there. Don't comment on it.
